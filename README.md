@@ -1,7 +1,7 @@
 # bottom-up-features
 This repo covers the implementation of extracting features for training caption models (e.g., [Meshed-Memory-Transformer](https://github.com/aimagelab/meshed-memory-transformer)). The features are extracted by a pre-trained ResNet101-faster-RCNN. It selects top 36 detections per image and each detection has a feature of dimension 2048. Thus, for each image, the feature is a tensor of dimension 36x2048.
 
-Here is an example of preparing features for training on [ArtEmis](https://github.com/Kilichbek/artemis-speaker-tools-b) dataset.
+Here is an example of preparing features for training on [ArtEmis](https://github.com/Kilichbek/artemis-speaker-tools-b) dataset. The images of WikiArt can be downloaded from [here](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset).
 
 ## Requirements
 We tested on a Nvidia RTX-A6000 with pytorch-1.10, cuda-11.3.
@@ -23,7 +23,7 @@ If you have multiple GPUs (for example, 4 GPUs):
 ```
 python generate_tsv_by_gpu.py --num_gpus=4 --gpu=[0|1|2|3] --split_file='wikiart_split.pkl' --wikiart_root='/home/yiren/artemis/wikiart'
 ```
-where `wikiart_split.pkl` stores the image file names and image ids for the dataset. Running above commands will generate tsv files `tmp0.csv`, `tmp1.csv`, `tmp2.csv`, and `tmp3.csv`. Then, call:
+where `wikiart_split.pkl` stores the image file names and image ids for the dataset and can be found [here](https://drive.google.com/file/d/1gjzGK-D9bqxPjjvYdM51sJSm3Vzvh59G/view). Running above commands will generate tsv files `tmp0.csv`, `tmp1.csv`, `tmp2.csv`, and `tmp3.csv`. Then, call:
 ```
 python merge_tsv.py --num_gpus=4
 ```
