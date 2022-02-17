@@ -30,7 +30,7 @@ python merge_tsv.py --num_gpus=4
 
 ## Results
 We Compare results between table 4 of [original CVPR paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Achlioptas_ArtEmis_Affective_Language_for_Visual_Art_CVPR_2021_paper.pdf) (using R101-faster-RCNN pre-trained by Visual Genome), the [ArXiv](https://arxiv.org/pdf/2101.07396.pdf) version, and ours using the same model but pre-trained on COCO.
-|     	     |    CVPR    |    arxiv   |      ours     |
+|     	     |    CVPR    |    ArXiv   |      ours     |
 | :--------: | :--------: | :--------: | :-----------: |
 |  BLEU-1    |    0.507	  |    0.484	 |      0.502	   |
 |  BLEU-2    |    0.282   |    0.251   |      0.271    |
