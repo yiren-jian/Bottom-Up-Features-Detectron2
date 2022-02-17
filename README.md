@@ -28,5 +28,16 @@ where `wikiart_split.pkl` stores the image file names and image ids for the data
 python merge_tsv.py --num_gpus=4
 ```
 
+## Results
+We Compare results between table 4 of [original CVPR paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Achlioptas_ArtEmis_Affective_Language_for_Visual_Art_CVPR_2021_paper.pdf) (using R101-faster-RCNN pre-trained by Visual Genome), the [ArXiv](https://arxiv.org/pdf/2101.07396.pdf) version, and ours using the same model but pre-trained on COCO.
+|     	     |    CVPR    |    arxiv   |      ours     |
+| :--------: | :--------: | :--------: | :-----------: |
+|  BLEU-1    |    0.507	  |    0.484	 |      0.502	   |
+|  BLEU-2    |    0.282   |    0.251   |      0.271    |
+|  BLEU-3    |    0.159   |    0.137   |      0.147    |
+|  BLEU-4    |    0.095   |    0.088   |      0.084    |
+|  METEOR    |    0.140   |    0.137   |      0.128    |
+|  ROGUGE    |    0.280   |    0.280   |      0.271    |
+
 ## Acknowledgment
 Thanks the author for the original [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention/blob/master/tools/generate_tsv.py) implementation and models from [Detectron2](https://github.com/facebookresearch/detectron2).
