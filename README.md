@@ -27,4 +27,4 @@ python merge_tsv.py --num_gpus=4
 ```
 
 ## Acknowledgment
-Thanks the author for the original [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention/blob/master/tools/generate_tsv.py) implementation and models from [Detection2](https://github.com/facebookresearch/detectron2).
+Thanks the author for the original [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention/blob/master/tools/generate_tsv.py) implementation and models from [Detectron2](https://github.com/facebookresearch/detectron2).
