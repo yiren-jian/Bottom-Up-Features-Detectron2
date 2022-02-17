@@ -5,7 +5,7 @@ This repo is an example of preparing features for training on [ArtEmis](https://
 
 ## Requirements
 We tested on a Nvidia RTX-A6000 with pytorch-1.10, cuda-11.3.
-```
+```shell
 # install pytorch
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
@@ -16,15 +16,15 @@ python -m pip install detectron2 -f \
 
 ## Extract features
 If you have a single GPU on the system, simply do:
-```
+```shell
 python generate_tsv.py
 ```
 If you have multiple GPUs (for example, 4 GPUs):
-```
+```shell
 python generate_tsv_by_gpu.py --num_gpus=4 --gpu=[0|1|2|3] --split_file='wikiart_split.pkl' --wikiart_root='/home/yiren/artemis/wikiart'
 ```
 where `wikiart_split.pkl` stores the image file names and image ids for the dataset and can be found [here](https://drive.google.com/file/d/1gjzGK-D9bqxPjjvYdM51sJSm3Vzvh59G/view). Running above commands will generate tsv files `tmp0.csv`, `tmp1.csv`, `tmp2.csv`, and `tmp3.csv`. Then, call:
-```
+```shell
 python merge_tsv.py --num_gpus=4
 ```
 
