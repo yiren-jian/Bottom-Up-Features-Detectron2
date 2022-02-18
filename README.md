@@ -5,10 +5,10 @@ This repo is an example of preparing features for training on [ArtEmis](https://
 
 Some example of detections are illustrated below.
 
-<img src="images/6.jpg" width="200">
-<img src="images/7.jpg" width="200">
-<img src="images/34.jpg" width="200">
-<img src="images/58.jpg" width="200">
+<img src="images/6.jpg" width="400">
+<img src="images/7.jpg" width="400">
+<img src="images/34.jpg" width="400">
+<img src="images/58.jpg" width="400">
 
 
 ## Requirements
