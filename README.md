@@ -3,6 +3,12 @@ This repo covers the implementation of extracting features for training caption 
 
 This repo is an example of preparing features for training on [ArtEmis](https://github.com/Kilichbek/artemis-speaker-tools-b) dataset. The images of WikiArt can be downloaded from [here](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset).
 
+Some example of detections are illustrated below.
+
+![teaser-1](images/6.jpg)
+![teaser-2](images/7.jpg)
+
+
 ## Requirements
 We tested on a Nvidia RTX-A6000 with pytorch-1.10, cuda-11.3.
 ```shell
