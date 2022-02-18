@@ -5,8 +5,8 @@ This repo is an example of preparing features for training on [ArtEmis](https://
 
 Some example of detections are illustrated below.
 
-![teaser-1](images/6.jpg)
-![teaser-2](images/7.jpg)
+![example-1](images/6.jpg =400x400)
+![example-2](images/7.jpg)
 
 
 ## Requirements
