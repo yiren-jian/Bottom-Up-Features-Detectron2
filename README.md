@@ -1,4 +1,4 @@
-# Bottom-Up-Features
+# Bottom-Up Features by Detectron2
 This repo covers the implementation of extracting features for training caption models (e.g., [Meshed-Memory-Transformer](https://github.com/aimagelab/meshed-memory-transformer)). The features are extracted by a pre-trained ResNet101-faster-RCNN. It selects top 36 detections per image and each detection has a feature of dimension 2048. Thus, for each image, the feature is a tensor of dimension 36x2048.
 
 This repo is an example of preparing features for training on [ArtEmis](https://github.com/Kilichbek/artemis-speaker-tools-b) dataset. The images of WikiArt can be downloaded from [here](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset).
